@@ -6,9 +6,19 @@
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
+    --border-radius: 30px;
+
+
     
 }
 
+*, *::after, *::before {
+
+box-sizing: border-box;
+
+
+}
 /* Typographyy */
 
 
@@ -213,4 +223,139 @@ a {
     align-items: center;
 
 
+}
+
+/* Buttons */
+
+.btn {
+   
+    border-radius: 40px;
+    border-style: none;
+    border: 0;
+   
+    
+    font-size: 1.8rem;
+    font-weight: 600;
+    height: 90px;
+    margin: 1rem 0;
+    
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 180px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn--primary {
+
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn--primary:hover {
+    background: #3a8ffd;
+}
+
+.btn--secondary {
+    background-color: var(--color-secondary);
+    border: 2px solid #1b0760;
+    color: #fff;
+    height: 90px;
+    width: 360px;
+
+   
+   
+}
+
+.btn--secondary:hover {
+    background: #00c8eb;
+}
+
+.btn--accent {
+
+    
+     background-color: var(--color-accent);
+     border-style: none;
+     color: white;
+     height: 90px;
+     width: 281px;
+
+
+
+
+
+}
+
+.btn--accent:hover {
+    background: #ec3000;
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+.btn--outline {
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+
+}
+
+.btn--outline:hover {
+
+    background: var(--color-headings);
+    color: #fff;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* Inputs */
+
+.input {
+    
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+
+
+} 
+
+.input-group .btn {
+    margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+
+    }
 }
