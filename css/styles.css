@@ -494,6 +494,7 @@ a {
 
       .container .card {
         margin-left: 0;
+        padding-right: 0px;
       }
     
       .card-wrapper {
@@ -521,12 +522,12 @@ a {
   @media screen and (min-width: 1024px) {
     
     .card--primary {
-        max-width: 230px;
+        max-width: 270px;
       
       }
 
       .card--secondary {
-        max-width: 230px;
+        max-width: 270px;
       
       }
 
@@ -1076,6 +1077,6 @@ a {
   @media screen and (min-width: 1024px) {
     .plan {
        margin: -20px 0px;
-       margin-left: 40px;
+       margin-left: 0px;
     }
   }
