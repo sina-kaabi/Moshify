@@ -522,10 +522,12 @@ a {
     
     .card--primary {
         max-width: 230px;
+      
       }
 
       .card--secondary {
         max-width: 230px;
+      
       }
 
   }
