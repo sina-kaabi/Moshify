@@ -401,10 +401,24 @@ a {
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
     overflow: hidden;
-    
-    
+   
     
 }
+
+/*
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    grid-gap: 2rem;
+    
+ 
+}
+*/
+
+
 /*
 .card:hover {
     transform: scale(1.1);
@@ -448,6 +462,73 @@ a {
 }
 
 
+@media only screen and (max-width: 767px) {
+    .card  {
+     margin-bottom: 80px;
+     max-width: 90vw;
+
+     align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    /* Your CSS rules for screens wider than 768px go here */
+  
+      
+      .card-container {
+        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      
+
+      .card--primary {
+        max-width: 210px;
+      }
+
+      .card--secondary {
+        max-width: 210px;
+      }
+
+      .container .card {
+        margin-left: 0;
+      }
+    
+      .card-wrapper {
+        display: flex;
+        justify-content: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        
+      }
+
+      .card-wrapper::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* Safari and Chrome */
+      }
+
+      .card--primary {
+        width: 33vw;
+      }
+      .card--secondary {
+        width: 33vw;
+    
+      }
+  }
+
+  @media screen and (min-width: 1024px) {
+    
+    .card--primary {
+        max-width: 230px;
+      }
+
+      .card--secondary {
+        max-width: 230px;
+      }
+
+  }
 
 /* Plans */
 
@@ -490,9 +571,6 @@ a {
     margin-bottom: 2rem;
 }
 
-.plan--popular {
-transform: scale(1.1);
-}
 
 .plan--popular .card__header {
     position: relative;
@@ -516,7 +594,7 @@ transform: scale(1.1);
 }
 
 .plan--popular:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     
 }
 
@@ -540,10 +618,9 @@ transform: scale(1.1);
         
     }
 
-    .card-wrapper {
-        display: flex;
-        justify-content: space-between;
-      }
+ 
+
+    
 }
 
 
@@ -635,6 +712,7 @@ transform: scale(1.1);
 
 .grid {
     display: grid;
+    
 
 }
 
@@ -978,5 +1056,24 @@ transform: scale(1.1);
 
 .block-plans .grid {
     max-width: 500px;
-    margin: 0 auto;
+
+    
 }
+
+
+
+  .plan {
+    width: 30vw;
+    row-gap: 20px;
+    padding-right: 30px;
+    
+    align-self: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .plan {
+       margin: -20px 0px;
+       margin-left: 40px;
+    }
+  }
