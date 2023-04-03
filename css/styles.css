@@ -185,8 +185,11 @@ a {
 .list--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
-    
+   
+   
 }
+
+
 
 .list--tick .list__item {
     padding-left: 0.5rem;
@@ -198,6 +201,9 @@ a {
     .list--tick .list__item {
         padding-left: 0;
     }
+
+  
+  
 
 
 }
@@ -346,6 +352,11 @@ a {
     .btn {
         font-size: 1.5rem;
     }
+
+    .btn--popular {
+        
+        
+    }
     
 }
 
@@ -436,6 +447,7 @@ a {
 .card--primary .card__header  {
     background: var(--color-primary);
     color: #fff;
+    
 
 }
 
@@ -443,6 +455,7 @@ a {
 .card--secondary .card__header  {
     background: var(--color-secondary);
     color: #fff;
+   
 
 
 }
@@ -465,10 +478,30 @@ a {
 @media only screen and (max-width: 767px) {
     .card  {
      margin-bottom: 80px;
+    
      max-width: 90vw;
 
      align-items: center;
     }
+
+    .card--primary {
+        max-width: 450px;
+        
+        margin: 0 auto;
+      }
+
+      .card--secondary {
+        max-width: 450px;
+       
+        margin: 0 auto;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+      }
+
   }
 
   @media screen and (min-width: 768px) {
@@ -523,13 +556,18 @@ a {
     
     .card--primary {
         max-width: 270px;
+        
       
       }
 
       .card--secondary {
         max-width: 270px;
+     
+        
       
       }
+
+  
 
       .card-container {
         display: flex;
@@ -538,13 +576,30 @@ a {
         gap: 0px;
         
       }
+      .card--primary .card__header  {
+     
+       
+        
+        
+    
+    
+    }
 
+    .card--primary .card__body {
+        
+    }
+   
+
+    
+
+ 
   }
 
 /* Plans */
 
 .plan {
     transition: transform .2s ease-out;
+   
 }
 
 
@@ -582,6 +637,10 @@ a {
     margin-bottom: 2rem;
 }
 
+.plan--popular {
+    transform: scale(1.1);
+}
+
 
 .plan--popular .card__header {
     position: relative;
@@ -600,15 +659,23 @@ a {
 
 
 
+
 .plan:hover {
     transform: scale(1.05);
 }
 
 .plan--popular:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
     
 }
 
+
+@media screen and (max-width: 767px) {
+
+    .plan {
+        margin-bottom: 55px;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .plan__name {
@@ -628,6 +695,11 @@ a {
         font-size: 1.7rem;
         
     }
+
+  
+
+
+ 
 
  
 
@@ -734,7 +806,20 @@ a {
 
 
     }
+
+    .grid--1x3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
+
+
 
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
@@ -745,6 +830,8 @@ a {
 
     }
 }
+
+
 
 /* Testimonials */
 
@@ -1062,14 +1149,11 @@ a {
 /* Plans Block */
 
 .block-plans .grid {
-    gap: 8rem 4rem;
+    gap:  8rem 4rem;
 }
 
-.block-plans .grid {
-    max-width: 500px;
 
-    
-}
+
 
 
 
@@ -1086,10 +1170,13 @@ a {
     .plan {
        margin: -20px 0px;
        margin-left: 0px;
+      
     }
 
     .plan--plus {
         margin-left: 0px;
 
     }
+
+   
   }
