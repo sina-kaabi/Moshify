@@ -531,6 +531,14 @@ a {
       
       }
 
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        
+      }
+
   }
 
 /* Plans */
@@ -1078,5 +1086,10 @@ a {
     .plan {
        margin: -20px 0px;
        margin-left: 0px;
+    }
+
+    .plan--plus {
+        margin-left: 0px;
+
     }
   }
