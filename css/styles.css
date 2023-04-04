@@ -22,7 +22,10 @@ box-sizing: border-box;
 }
 /* Typographyy */
 
-
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
 
 html {
     /* 62.5% of 16px = 10px */
@@ -59,6 +62,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -171,7 +175,7 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
+    
 
 }
 
@@ -185,6 +189,7 @@ a {
 .list--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-headings);
    
    
 }
@@ -731,15 +736,32 @@ a {
 
 .media {
     display: flex;
-
+   margin-bottom: 4rem;
 }
 
 .media__title {
-    margin-top: 0;
+    margin-top: 20px;
     
     font-style: montserrat;
 
     color: var(--color-headings);
+    font-size: 1.5rem;
+    color: white;
+}
+
+.media__text {
+    font-size: 10.5px;
+    
+    color: darkgray;
+    opacity: 0.5;
+     /* New properties for three lines of text */
+        line-height: 1.5em; /* sets the height of each line to 1.5 times the font size */
+        width: 45ch;  /* 3 lines of text, assuming 15-16 characters per line */
+
+        overflow: hidden; /* hides any content that overflows beyond the set height */
+        
+        
+      text-align: left;
 }
 
 .media__body {
@@ -750,6 +772,7 @@ a {
     margin-top: 1rem;
     
 }
+
 
 
 /* Quotes */
@@ -1010,19 +1033,21 @@ a {
     color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
  color: #fff
 }
 
 .block--skewed-right {
     padding-right: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 
 .block--skewed-left {
     padding-right: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {
@@ -1110,9 +1135,6 @@ a {
 
 /* Hero */
 
-.hero {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 
 .hero__tagline {
     font-size: 2rem;
@@ -1224,9 +1246,34 @@ a {
     width: 100%;
   }
 
+
   @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content   {
         order: 2;
     }
 
   }
+
+  /* Showcase Block */
+
+  .block-showcase__image > img {
+    width: 100%;
+  }
+
+
+  @media screen and (min-width: 768px) {
+
+    .block-showcase .grid {
+        grid-template-columns: 50% 50%;
+    }
+    .block-showcase__image {
+      
+        justify-self: end;
+ 
+    }
+
+    .block-showcase__image > img {
+        width: auto;
+        max-width: 700px;
+    }
+}
