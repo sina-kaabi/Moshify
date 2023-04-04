@@ -477,7 +477,7 @@ a {
 
 @media only screen and (max-width: 767px) {
     .card  {
-     margin-bottom: 80px;
+     
     
      max-width: 90vw;
 
@@ -816,8 +816,18 @@ a {
 .grid {
     display: grid;
     
+    
 
 }
+
+@media only screen and (max-width: 767px) {
+    .grid--1x3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+     
+    }
+  } 
 
 @media screen and (min-width: 768px) {
     .grid--1x2 {
@@ -831,7 +841,7 @@ a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1;
-        grid-row-gap: 2rem;
+        
     }
 
   
