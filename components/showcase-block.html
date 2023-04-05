@@ -6,14 +6,25 @@
     <picture class="block-showcase__image">
       <source
         type="image/webp"
-        srcset="images/ipad.webp 1x, images/ipad@2x.webp"
+        srcset="
+          images/ipad-small.webp   480w,
+          images/ipad-medium.webp  768w,
+          images/ipad-large.webp  1280w
+        "
+        sizes="(max-width: 460px) 100vw, (min-width: 461px) and (max-width: 768px) 460px, (min-width: 769px) 700px"
       />
       <source
         type="image/png"
-        srcset="images/ipad.png 1x, images/ipad@2x.png"
+        srcset="
+          images/ipad-small.png   480w,
+          images/ipad-medium.png  768w,
+          images/ipad-large.png  1280w
+        "
+        sizes="(max-width: 460px) 100vw, (min-width: 461px) and (max-width: 768px) 460px, (min-width: 769px) 700px"
       />
       <img class="showcase--image" src="images/ipad.png" alt="" />
     </picture>
+
     <ul class="list">
       <li>
         <div class="media">
