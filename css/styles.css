@@ -260,7 +260,7 @@ a {
 
 .btn {
    
-    border-radius: 40px;
+    border-radius: 30px;
     border-style: none;
     border: 0;
    
@@ -934,7 +934,17 @@ a {
 
 .callout {
     padding: 4rem;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: relative;
+    bottom: -130px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: block;
+
 
 }
 
@@ -1307,6 +1317,7 @@ a {
 
 .footer {
     background: #232323;
+    margin-top: 10rem;
    
 }
 
@@ -1406,3 +1417,9 @@ color: #fff;
       
 }   
 
+/* Z index  - UI */
+
+section {
+    position: relative;
+    
+}
