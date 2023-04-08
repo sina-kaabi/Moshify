@@ -505,6 +505,7 @@ a {
       .card-container {
         display: grid;
         grid-template-columns: 1fr;
+          
         
       }
 
@@ -1209,7 +1210,7 @@ a {
 
 
   .plan {
-    width: 30vw;
+    
     row-gap: 20px;
     padding-right: 30px;
     
@@ -1217,10 +1218,21 @@ a {
     align-items: center;
   }
 
+  @media screen and (min-width: 768px) {
+    .plan {
+    
+        width: 30vw;
+      
+    }
+
+   
+  }
+
   @media screen and (min-width: 1024px) {
     .plan {
        margin: -20px 0px;
        margin-left: 0px;
+        width: 30vw;
       
     }
 
