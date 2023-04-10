@@ -44,6 +44,8 @@ body {
 
 }
 
+
+
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
@@ -258,7 +260,7 @@ a {
 
 .btn {
    
-    border-radius: 40px;
+    border-radius: 30px;
     border-style: none;
     border: 0;
    
@@ -505,6 +507,7 @@ a {
       .card-container {
         display: grid;
         grid-template-columns: 1fr;
+          
         
       }
 
@@ -931,7 +934,17 @@ a {
 
 .callout {
     padding: 4rem;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: relative;
+    bottom: -130px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: block;
+
 
 }
 
@@ -1209,7 +1222,7 @@ a {
 
 
   .plan {
-    width: 30vw;
+    
     row-gap: 20px;
     padding-right: 30px;
     
@@ -1217,10 +1230,21 @@ a {
     align-items: center;
   }
 
+  @media screen and (min-width: 768px) {
+    .plan {
+    
+        width: 30vw;
+      
+    }
+
+   
+  }
+
   @media screen and (min-width: 1024px) {
     .plan {
        margin: -20px 0px;
        margin-left: 0px;
+        width: 30vw;
       
     }
 
@@ -1293,8 +1317,11 @@ a {
 
 .footer {
     background: #232323;
+    margin-top: 10rem;
    
 }
+
+
 
 .footer__section .list {
     margin: 0;
@@ -1318,7 +1345,10 @@ color: #fff;
 .footer__sections {
 
     height: 100vh;
+    height: 800px;
 }
+
+
 
 .footer__heading {
     text-transform: uppercase;
@@ -1350,9 +1380,11 @@ color: #fff;
 
 
 @media screen and (min-width: 768px) {
+
+  
     .footer__sections {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-
+        height: 300px;
     }
 
     .footer .collapsible__chevron {
@@ -1380,4 +1412,14 @@ color: #fff;
     .footer__heading {
         font-size: 1.6rem;
     }
+
+      
+      
 }   
+
+/* Z index  - UI */
+
+section {
+    position: relative;
+    
+}
