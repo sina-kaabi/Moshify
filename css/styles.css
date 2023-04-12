@@ -490,83 +490,14 @@ a {
 }
 
 
-@media only screen and (max-width: 767px) {
-    .card  {
-     
-    
-     max-width: 90vw;
 
-     align-items: center;
-    }
 
-    .card--primary {
-        max-width: 450px;
-        
-        margin: 0 auto;
-      }
+   
 
-      .card--secondary {
-        max-width: 450px;
-       
-        margin: 0 auto;
-      }
-
-      .card-container {
-        display: grid;
-        grid-template-columns: 1fr;
-          
-        
-      }
-
-  }
-
-  @media screen and (min-width: 768px) {
-    /* Your CSS rules for screens wider than 768px go here */
   
-      
-      .card-container {
-        
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-      
-      
 
-      .card--primary {
-        max-width: 210px;
-      }
 
-      .card--secondary {
-        max-width: 210px;
-      }
-
-      .container .card {
-        margin-left: 0;
-        padding-right: 0px;
-      }
-    
-      .card-wrapper {
-        display: flex;
-        justify-content: center;
-        overflow-x: auto;
-        overflow-y: hidden;
-        
-      }
-
-      .card-wrapper::-webkit-scrollbar {
-        width: 0px;
-        background: transparent; /* Safari and Chrome */
-      }
-
-      .card--primary {
-        width: 33vw;
-      }
-      .card--secondary {
-        width: 33vw;
-    
-      }
-  }
+  
 
   @media screen and (min-width: 1024px) {
     
@@ -592,18 +523,6 @@ a {
         gap: 0px;
         
       }
-      .card--primary .card__header  {
-     
-       
-        
-        
-    
-    
-    }
-
-    .card--primary .card__body {
-        
-    }
    
 
     
@@ -866,9 +785,7 @@ a {
     }
 
     .grid--1x3 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1;
+      
         
     }
 
@@ -880,7 +797,7 @@ a {
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 650px;
+        
         grid-gap: 0;
         
 
@@ -1223,7 +1140,10 @@ a {
     gap:  8rem 4rem;
 }
 
-
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 
 
@@ -1237,15 +1157,9 @@ a {
     align-items: center;
   }
 
-  @media screen and (min-width: 768px) {
-    .plan {
-    
-        width: 30vw;
-      
-    }
 
    
-  }
+  
 
   @media screen and (min-width: 1024px) {
     .plan {
