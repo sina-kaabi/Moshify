@@ -32,6 +32,8 @@ box-sizing: border-box;
 html {
     /* 62.5% of 16px = 10px */
     font-size: 62.5%;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* TODO: ... */
@@ -42,6 +44,9 @@ body {
     font-size: 2.4rem;
     line-height: 1.5;
     color: var(--color-body);
+    overflow-x: hidden;
+    width: 100%;
+    
     
 
 }
