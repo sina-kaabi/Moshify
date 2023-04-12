@@ -862,17 +862,19 @@ a {
 
 .callout {
     padding: 4rem;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    position: relative;
-    bottom: -130px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    
     left: 0;
     right: 0;
-    z-index: 9999;
-    display: block;
 
+   
 
 }
 
