@@ -315,7 +315,7 @@ a {
     border: 2px solid #1b0760;
     color: #fff;
     height: 90px;
-    width: 75vw;
+    width: 360px;
 
    
    
@@ -366,6 +366,19 @@ a {
     background: var(--color-headings);
     color: #fff;
 
+}
+
+@media only screen and (max-width: 767px) {
+
+    .btn--secondary {
+       
+        width: 75vw;
+    
+       
+       
+    }
+
+    
 }
 
 @media screen and (min-width: 1024px) {
