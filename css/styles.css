@@ -425,7 +425,11 @@ a {
  
     .input-group .btn--accent {
         
-        max-width: 120px;
+        max-width: 130px;
+    }
+
+    .input-group .input {
+        font-size: 1.5rem;
     }
 }
 
