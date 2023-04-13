@@ -892,9 +892,10 @@ a {
 }
 
 .callout .btn {
-
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
 }
 
@@ -902,10 +903,30 @@ a {
     text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+      
+    }
+
+
+    .callout__content {
+        text-align: center;
+
+    }
+
+    .callout .btn {
+        justify-self: center;
+        margin: 1rem 0;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .callout .grid--1x2 {
         grid-template-columns: 1fr auto;
+        justify-items: center;
     }
 
 
