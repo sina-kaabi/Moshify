@@ -420,6 +420,16 @@ a {
     margin: 4px;
 }
 
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+ 
+    .input-group .btn--accent {
+        
+        max-width: 180px;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
     .input {
         font-size: 1.5rem;
