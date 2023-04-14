@@ -386,10 +386,6 @@ a {
         font-size: 1.5rem;
     }
 
-    .btn--popular {
-        
-        
-    }
     
 }
 
@@ -1225,7 +1221,7 @@ a {
 
     .grid {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .plan {
