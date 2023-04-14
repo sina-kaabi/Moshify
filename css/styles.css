@@ -372,7 +372,7 @@ a {
 
     .btn--secondary {
        
-        width: 75vw;
+        max-width: 75vw;
     
        
        
