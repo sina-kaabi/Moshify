@@ -40,8 +40,8 @@
 
         <ul class="list nav__list collapsible__content">
           <li class="nav__item"><a href="#">POS</a></li>
-          <li class="nav__item"><a href="#">Mission</a></li>
           <li class="nav__item"><a href="#">Hardware</a></li>
+          <li class="nav__item"><a href="#">Mission</a></li>
           <li class="nav__item"><a href="#">Pricing</a></li>
         </ul>
       </nav>
@@ -60,16 +60,25 @@
 
         <picture data-aos="zoom-in">
           <source
+            type="image/webp"
+            srcset="
+              images/mobile-phone-pos.webp    1x,
+              images/mobile-phone-pos@2x.webp 2x
+            " />
+          <source
             type="image/png"
-            srcset="images/iphone-pos.png 1x, images/iphone-pos@2x.png 2x" />
-          <img class="hero__image" src="images/iphone-pos.png" alt=""
+            srcset="
+              images/mobile-phone-pos.png    1x,
+              images/mobile-phone-pos@2x.png 2x
+            " />
+          <img class="hero__image" src="images/mobile-phone-pos.png" alt=""
         /></picture>
       </div>
     </section>
 
     <section data-aos="fade-up" class="block container block-domain">
       <header class="block__header">
-        <h2>Sign up from 0$ per month</h2>
+        <h2>Sign up from $1 per month</h2>
         <p>Join the waitlist now and be the first to get your POS.</p>
       </header>
       <div class="input-group">
@@ -87,8 +96,8 @@
       </div>
       <ul class="list block-domain__prices">
         <li><span class="badge badge--secondary">POS</span></li>
-        <li>Ordering</li>
         <li>Kiosk</li>
+        <li>Ordering</li>
         <li>Printer</li>
       </ul>
     </section>
@@ -99,7 +108,7 @@
             <div class="card card--secondary">
               <header class="card__header">
                 <h3 class="plan__name">Entry</h3>
-                <span class="plan__price">$0</span>
+                <span class="plan__price">$1</span>
                 <span class="plan__billing-cycle">/month</span>
                 <span class="badge badge--secondary badge--small">10% OFF</span>
                 <span class="plan__description">Easy set-up</span>
@@ -111,7 +120,7 @@
                   <li class="list__item">Online Ordering</li>
                   <li class="list__item">Tap to Pay</li>
                 </ul>
-                <button class="btn btn--outline btn--block">Get Started</button>
+                <button class="btn btn--outline btn--block">Sign Up</button>
               </div>
             </div>
           </div>
@@ -123,7 +132,7 @@
                 <span class="plan__price">$5</span>
                 <span class="plan__billing-cycle">/month</span>
                 <span class="badge badge--primary badge--small">10% OFF</span>
-                <span class="plan__description">Optimized set-up </span>
+                <span class="plan__description">Advanced set-up </span>
               </header>
               <div class="card__body card--body">
                 <ul class="list list--tick list--popular">
@@ -133,7 +142,7 @@
                   <li class="list__item">Tap to Pay</li>
                 </ul>
                 <button class="btn btn--outline btn--block btn--popular">
-                  Get Started
+                  Sign Up
                 </button>
               </div>
             </div>
@@ -155,7 +164,7 @@
                   <li class="list__item">Kiosk</li>
                   <li class="list__item">Tap to Pay</li>
                 </ul>
-                <button class="btn btn--outline btn--block">Get Started</button>
+                <button class="btn btn--outline btn--block">Sign Up</button>
               </div>
             </div>
           </div>
@@ -164,11 +173,8 @@
     </section>
     <section class="block container">
       <header class="block__header">
-        <h2>Host on the Cloud to Keep Growing</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
-          maiores.
-        </p>
+        <h2>Streamline your POS with our mobile app</h2>
+        <p>Turn your smartphone into a POS and a card reader machine.</p>
       </header>
       <article class="grid grid--1x2 feature">
         <div class="feature__content" data-aos="fade-right">
@@ -260,9 +266,9 @@
           </span>
           <h3 class="feature__heading">24/7 Expert Support</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            cumque vero fugiat. Inventore iusto alias, quibusdam quis commodi
-            eligendi sapiente?
+            At PocketPos, we understand how important it is for our customers to
+            have access to reliable, high-quality support whenever they need it.
+            That's why we offer a 24/7 expert support service.
             <a href="#" class="link-arrow">Learn More</a>
           </p>
         </div>
@@ -281,7 +287,7 @@
     </section>
     <section class="block block--dark block--skewed-right block-showcase">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2>User-friendly dashboard</h2>
       </header>
       <div class="container grid grid--1x2">
         <picture data-aos="fade-right" class="block-showcase__image">
@@ -315,11 +321,12 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <h3 class="media__title">Tap to pay</h3>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Pariatur eum possimus optio ipsam architecto quasi nulla, quam
-                  magni ratione.
+                  Tap to pay is a payment technology that allows users to make
+                  contactless payments by simply tapping their payment device
+                  (such as a credit card, smartphone, or smartwatch) on a
+                  payment terminal such as PocketPos.
                 </p>
               </div>
             </div>
@@ -332,11 +339,13 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                <h3 class="media__title">Online ordering</h3>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Pariatur eum possimus optio ipsam architecto quasi nulla, quam
-                  magni ratione.
+                  Mobile app online ordering allows customers to browse menus,
+                  place orders, and pay using a mobile device. Businesses
+                  receive and process orders, with the option for delivery or
+                  pickup. It's a convenient way for customers to order and for
+                  businesses to streamline operations.
                 </p>
               </div>
             </div>
@@ -349,11 +358,13 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
+                <h3 class="media__title">Kiosk ordering</h3>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Pariatur eum possimus optio ipsam architecto quasi nulla,
-                  quam.
+                  Kiosk ordering is a self-service ordering system that allows
+                  customers to place orders through a touch-screen kiosk or
+                  tablet. This method of ordering has become increasingly
+                  popular in recent years, particularly for food and retail
+                  businesses.
                 </p>
               </div>
             </div>
@@ -363,11 +374,8 @@
     </section>
     <section class="block" data-aos="zoom-in">
       <header class="block__header">
-        <h2>What our Customers are Saying</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
-          placeat.
-        </p>
+        <h2>What is our mission </h2>
+        <p>Testimonial from Jack, PocketPos Founder & CEO.</p>
       </header>
       <div class="container">
         <div class="card testimonial">
@@ -386,9 +394,10 @@
             <div>
               <blockquote class="quote">
                 <p class="quote__text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  a nam molestias distinctio tenetur veniam tempore dolor dicta
-                  neque mollitia!
+                  Switching to PocketPos will be like adding some zest to your
+                  fruit-selling game. You can quickly and easily ring up
+                  customers and track inventory, freeing up time to explore new
+                  varieties and exotic imports.
                 </p>
                 <footer>
                   <div class="media">
@@ -399,7 +408,7 @@
                     </div>
                     <div class="media__body">
                       <h3 class="media__title quote__author">Jhone Lumeo</h3>
-                      <p class="quote__company">Mosh Company</p>
+                      <p class="quote__company">Jack Nicholson</p>
                     </div>
                   </div>
                 </footer>
@@ -415,12 +424,14 @@
           <div class="callout__content">
             <h2 class="callout__heading">Ready to Get Started?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, autem
-              repudiandae deleniti maiores nemo ullam! Fugit corrupti totam
-              voluptatum repellendus.
+              Get started with the PocketPOS system today and take your business
+              to the next level. Don't waste any more time with manual processes
+              or outdated systems.
             </p>
           </div>
-          <a href="#" class="btn btn--secondary btn--stretched"> Get Started</a>
+          <a href="#" class="btn btn--secondary btn--stretched">
+            Join Waitlist</a
+          >
         </div>
       </div>
     </div>
@@ -492,8 +503,12 @@
           </div>
         </section>
         <div class="footer__brand">
-          <img class="logo__copyright" src="images/logo.svg" alt="" />
-          <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
+          <img
+            class="logo__copyright"
+            src="images/pocket-pos-transparent-logo.png"
+            alt=""
+          />
+          <p class="footer__copyright">Copyright 2020 PocketPos</p>
         </div>
       </div>
     </footer>
