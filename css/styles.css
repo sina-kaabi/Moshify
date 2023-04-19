@@ -1355,7 +1355,7 @@ color: #fff;
 .footer__brand img {
     /* TODO: Consider refactoring this and applying it to all images. */
     width: 100%;
-    max-width: 230px;
+    
 }
 
 .footer__copyright {
@@ -1421,6 +1421,8 @@ section {
 }
 
 .logo__copyright {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 86px;
+    max-width: 100px;
+      
 }
