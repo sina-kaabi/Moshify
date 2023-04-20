@@ -241,6 +241,8 @@ a {
     fill: var(--color-primary);
 }
 
+
+
 .icon--white {
     fill: #fff;
 
@@ -267,6 +269,11 @@ a {
 
 .icon--container--accent {
     background: var(--color-accent);
+}
+
+.icon--showcase {
+    fill: #f76a1b;
+
 }
 
 /* Buttons */
@@ -770,6 +777,7 @@ a {
     font-style: normal;
     color: var(--color-headings);
     opacity: .4;
+    margin-top: -26px;
 
     
 
@@ -1030,8 +1038,8 @@ a {
 }
 
 .block--light {
-    background: #2584ff;
-    color: #ffffff;
+    background: #ffffff;
+    color: #000000;
 }
 
 .block--dark h1,
@@ -1278,7 +1286,9 @@ a {
     width: 100%;
   }
   
-
+.showcase--image {
+    margin-top: -10px;
+}
 
 
   @media screen and (min-width: 768px) {
