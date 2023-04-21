@@ -1272,6 +1272,10 @@ a {
     width: 100%;
   }
 
+  .feature--tap {
+    margin-left: 
+    -30px;
+  }
 
   @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content   {
@@ -1436,3 +1440,4 @@ section {
     max-width: 100px;
       
 }
+
