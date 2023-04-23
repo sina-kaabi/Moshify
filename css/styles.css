@@ -272,9 +272,17 @@ a {
 }
 
 .icon--showcase {
-    fill: #f76a1b;
+    fill: #ffffff;
 
 }
+
+.icon-new { 
+    width: 37.5px; 
+    height: 37.5px;
+    margin: .5em;
+    
+    margin-left: 0px;
+  }
 
 /* Buttons */
 
@@ -1274,7 +1282,7 @@ a {
 
   .feature--tap {
     margin-left: 
-    -30px;
+    -10px;
   }
 
   @media screen and (min-width: 768px) {
