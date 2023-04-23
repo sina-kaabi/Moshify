@@ -272,7 +272,7 @@ a {
 }
 
 .icon--showcase {
-    fill: #ffffff;
+    fill: #f07611;
 
 }
 
@@ -1162,6 +1162,7 @@ a {
 
 .hero__image {
     width: 100%;
+    min-width: 350px;
 
 }
 
@@ -1281,8 +1282,7 @@ a {
   }
 
   .feature--tap {
-    margin-left: 
-    -10px;
+
   }
 
   @media screen and (min-width: 768px) {
