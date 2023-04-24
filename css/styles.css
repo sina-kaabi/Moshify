@@ -272,16 +272,14 @@ a {
 }
 
 .icon--showcase {
-    fill: #f07611;
+    fill: #d2781e;
 
 }
 
-.icon-new { 
-    width: 37.5px; 
-    height: 37.5px;
-    margin: .5em;
-    
-    margin-left: 0px;
+.icon--new { 
+   width: 37.5px;
+   height: 37.5px;
+   
   }
 
 /* Buttons */
